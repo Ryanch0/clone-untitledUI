@@ -1,0 +1,58 @@
+@layer utilities {
+    .typo-base {
+        font-family: var(--font-body);
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-md);
+        font-weight: var(--font-regular);
+    }
+
+    .typo-page-title {
+        font-family: var(--font-display);
+        font-size: var(--font-size-display-xs);
+        line-height: var(--line-height-display-xs);
+        font-weight: var(--font-semibold);
+    }
+
+    .typo-section-title {
+        font-family: var(--font-body);
+        font-size: var(--font-size-lg);
+        line-height: var(--line-height-lg);
+        font-weight: var(--font-semibold);
+    }
+
+    .typo-nav {
+        font-family: var(--font-body);
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-md);
+        font-weight: var(--font-semibold);
+    }
+
+    .typo-tab {
+        font-family: var(--font-body);
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-sm);
+        font-weight: var(--font-semibold);
+    }
+
+
+    .typo-description {
+        font-family: var(--font-body);
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-sm);
+        font-weight: var(--font-regular);
+    }
+
+    .typo-label {
+        font-family: var(--font-body);
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-sm);
+        font-weight: var(--font-semibold);
+    }
+
+    .typo-file-meta {
+        font-family: var(--font-body);
+        font-size: var(--font-size-sm);
+        line-height: var(--line-height-sm);
+        font-weight: var(--font-medium);
+    }
+}

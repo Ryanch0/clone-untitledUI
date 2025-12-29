@@ -1,0 +1,56 @@
+@layer utilities {
+    /* Text color utilities (semantic) */
+    .text-primary {
+        color: var(--text-primary);
+    }
+
+    .text-secondary {
+        color: var(--text-secondary);
+    }
+
+    .text-tertiary {
+        color: var(--text-tertiary);
+    }
+
+    .text-muted {
+        color: var(--text-muted);
+    }
+
+    .text-placeholder {
+        color: var(--text-placeholder);
+    }
+
+    .text-accent {
+        color: var(--text-accent);
+    }
+
+    .text-success {
+        color: var(--text-success);
+    }
+
+    /* Brand background (primary button) */
+    .bg-brand {
+        background-color: var(--brand-primary);
+    }
+
+    .bg-primary {
+        background-color: var(--bg-primary);
+    }
+
+    .bg-secondary {
+        background-color: var(--bg-secondary);
+    }
+
+    /* ---------- Border utilities ---------- */
+    .border-primary {
+        border-color: var(--border-primary);
+    }
+
+    .border-secondary {
+        border-color: var(--border-secondary);
+    }
+
+    .bg-border-secondary {
+        background-color: var(--border-secondary);
+    }
+}

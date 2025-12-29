@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+@import './colors.css';
+@import './typograpy.css';
+
+:root {
+    --font-display: Inter, system-ui, sans-serif;
+    --font-body: Inter, system-ui, sans-serif;
+
+    --font-size-sm: 14px;
+    --line-height-sm: 20px;
+
+    --font-size-md: 16px;
+    --line-height-md: 24px;
+
+    --font-size-lg: 18px;
+    --line-height-lg: 28px;
+
+    --font-size-display-xs: 24px;
+    --line-height-display-xs: 32px;
+
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+
+    /* Text - semantic */
+    --text-primary: #181d27; /* page/section title, input value (default) */
+    --text-secondary: #414651; /* nav, label, active tab */
+    --text-tertiary: #535862; /* description text */
+    --text-muted: #717680; /* tab default */
+    --text-placeholder: #717680; /* input placeholder (same as muted in light) */
+
+    /* Brand / Accent / Status*/
+    --text-accent: #6941c6; /* upgrade-plan / purple text */
+    --brand-primary: #7f56d9; /* primary purple background (button) */
+    --text-success: #079455; /* upload success text */
+
+    /* bg-color */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #FAFAFA;
+
+    /* border-color */
+    --border-primary: #D5D7DA;
+    --border-secondary: #E9EAEB;
+
+    --border-focus: var(--brand-primary);
+
+}
+
+:root.dark {
+    --text-primary: #F7F7F7;
+    --text-secondary: #cecfd2;
+    --text-tertiary: #94979c;
+    --text-muted: #94979c;
+    --text-placeholder: #85888e;
+
+    --text-accent: #cecfd2;
+    --brand-primary: #7f56d9;
+    --text-success: #47cd89;
+
+    --bg-primary: #0c0e12;
+    --bg-secondary: #13161b;
+
+    --border-primary: #373a41;
+    --border-secondary: #22262f;
+
+    --border-focus: var(--brand-primary);
+}
+
+@layer base {
+    body {
+        font-family: var(--font-body);
+        font-size: var(--font-size-md);
+        line-height: var(--line-height-md);
+        font-weight: var(--font-regular);
+        color: var(--text-primary);
+        background-color: var(--bg-primary);
+    }
+}
+
+@layer utilities {
+    .input-base {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid var(--border-primary);
+        padding: 10px 14px;
+        transition: border-color 0.15s ease;
+
+        &::placeholder {
+            color: var(--text-placeholder);
+        }
+
+        &:focus {
+            outline: none;
+            border-color: var(--border-focus);
+        }
+
+    }
+
+}
