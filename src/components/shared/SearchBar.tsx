@@ -7,6 +7,7 @@ const SearchBar = () => {
       id={'search'}
       placeholder={'Search'}
       leftIcon={<Search size={20} />}
+      className={'!py-2'}
       rightIcon={
         <span
           className={

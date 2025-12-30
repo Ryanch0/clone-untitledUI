@@ -34,14 +34,14 @@ const CustomInput = ({
           {required && <span className="text-accent pl-0.5">*</span>}
         </label>
       )}
-      <div className="md:w-2/3 md:max-w-lg relative">
+      <div className="w-full md:max-w-lg relative">
         {leftIcon && (
           <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-muted">
             {leftIcon}
           </span>
         )}
         <input
-          className={`input-base w-full ${hasLeftIcon && '!pl-9'} ${hasRightIcon && '!pr-12'} ${className}`}
+          className={`input-base ${hasLeftIcon && '!pl-9'} ${hasRightIcon && '!pr-12'} ${className}`}
           id={id}
           name={id}
           placeholder={placeholder}
