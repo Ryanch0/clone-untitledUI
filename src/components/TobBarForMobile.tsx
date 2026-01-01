@@ -1,13 +1,14 @@
 import { useState } from 'react'
+import { cn } from '@/styles/utils.ts'
 
 const TobBarForMobile = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
-    <header className={'md:hidden border-secondary border-b p-4'}>
-      <div className={'flex'}>
+    <header className={cn('md:hidden border-secondary border-b p-4')}>
+      <div className={cn('flex')}>
         <h2>LOGO</h2>
         <div
-          className={'ml-auto md:hidden text-2xl'}
+          className={cn('ml-auto md:hidden text-2xl')}
           onClick={() => {
             setToggleMenu(!toggleMenu)
           }}
@@ -16,7 +17,7 @@ const TobBarForMobile = () => {
         </div>
       </div>
       {toggleMenu && (
-        <nav className={'md:hidden'}>
+        <nav className={cn('md:hidden')}>
           <ul>
             <li>mobile-menu</li>
             <li>mobile-menu</li>

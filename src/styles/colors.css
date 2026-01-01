@@ -4,10 +4,6 @@
         color: var(--text-primary);
     }
 
-    .text-secondary {
-        color: var(--text-secondary);
-    }
-
     .text-tertiary {
         color: var(--text-tertiary);
     }
@@ -33,17 +29,8 @@
         background-color: var(--brand-primary);
     }
 
-    .bg-primary {
-        background-color: var(--bg-primary);
-    }
-
     .bg-secondary {
         background-color: var(--bg-secondary);
-    }
-
-    /* ---------- Border utilities ---------- */
-    .border-primary {
-        border-color: var(--border-primary);
     }
 
     .border-secondary {
@@ -53,4 +40,27 @@
     .bg-border-secondary {
         background-color: var(--border-secondary);
     }
+
+    .button-shadow {
+        box-shadow:
+                0px 1px 2px 0px #0A0D120D,
+                0px -2px 0px 0px #0A0D120D inset,
+                0px 0px 0px 1px #0A0D120D inset;
+    }
+}
+
+@utility text-secondary {
+    color: var(--text-secondary);
+}
+
+@utility border-primary {
+    border-color: var(--border-primary);
+}
+
+@utility bg-primary {
+    background-color: var(--bg-primary);
+}
+
+@utility outline-primary {
+    outline: solid 1px var(--border-primary);
 }

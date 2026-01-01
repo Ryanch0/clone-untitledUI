@@ -1,7 +1,9 @@
+import { cn } from '@/styles/utils.ts'
+
 const Divider = () => {
   return (
     <div
-      className={'w-full h-[1px] bg-border-secondary'}
+      className={cn('w-full h-[1px] bg-border-secondary')}
       aria-hidden="true"
     ></div>
   )

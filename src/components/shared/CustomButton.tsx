@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import { cn } from '@/styles/utils.ts'
 
 type Props = {
   label: ReactNode
@@ -14,10 +15,13 @@ const CustomButton = ({
 }: Props) => {
   const themes = {
     primary: 'bg-primary border-primary',
-    brand: 'bg-brand text-white'
+    brand: 'bg-brand text-white border-primary'
   }
 
-  const getStyle = `${themes[theme]} cursor-pointer border-2 typo-label py-[10px] px-[14px] rounded-md`
+  const getStyle = cn(
+    themes[theme],
+    'cursor-pointer border typo-label py-[10px] px-[14px] rounded-md button-shadow'
+  )
 
   return (
     <button className={getStyle} type={type} onClick={onClick}>

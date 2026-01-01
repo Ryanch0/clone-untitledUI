@@ -4,41 +4,48 @@ import SearchBar from './shared/SearchBar.tsx'
 import CustomButton from './shared/CustomButton.tsx'
 import Divider from './shared/Divider.tsx'
 import { Info } from 'lucide-react'
+import TabList from '@/components/shared/TabList.tsx'
+import { cn } from '@/styles/utils.ts'
+import { TAB_OPTIONS } from '@/constant/constants.ts'
 
 const SettingPage = () => {
   return (
     <Layout>
-      <main className="bg-primary px-4 pb-12 pt-8 md:px-8">
-        <section className="space-y-8">
-          <header className="space-y-5">
+      <main className={cn('bg-primary px-4 pb-12 pt-8 md:px-8')}>
+        <section className={cn('space-y-8')}>
+          <header className={cn('space-y-5')}>
             <div
-              className={
+              className={cn(
                 'flex flex-col md:flex-row md:justify-between md:items-center gap-5'
-              }
+              )}
             >
-              <h2 className="typo-page-title">Settings</h2>
+              <h2 className={cn('typo-page-title')}>Settings</h2>
               <SearchBar />
             </div>
             <CustomInput
               id="test"
               placeholder="Details"
-              className={'md:hidden'}
+              className={cn('md:hidden')}
+            />
+            <TabList
+              options={TAB_OPTIONS}
+              rootClassname={cn('hidden md:block')}
             />
           </header>
 
-          <form className={'space-y-5'}>
+          <form className={cn('space-y-5')}>
             <div
-              className={
+              className={cn(
                 'flex flex-col justify-between md:flex-row md:items-center'
-              }
+              )}
             >
               <div>
-                <h3 className="typo-section-title">Personal info</h3>
-                <p className="typo-description text-tertiary">
+                <h3 className={cn('typo-section-title')}>Personal info</h3>
+                <p className={cn('typo-description text-tertiary')}>
                   Update your photo and personal details here.
                 </p>
               </div>
-              <div className="flex gap-3 pt-4">
+              <div className={cn('flex gap-3 pt-4')}>
                 <CustomButton label="Cancel" />
                 <CustomButton label="Save" type="submit" theme="brand" />
               </div>
@@ -67,20 +74,24 @@ const SettingPage = () => {
             />
             <Divider />
 
-            <fieldset className={'space-y-5'}>
+            <fieldset className={cn('space-y-5')}>
               <div>
-                <label className={'flex items-center gap-0.5'}>
-                  <span className={'typo-label text-secondary'}>
+                <label className={cn('flex items-center gap-0.5')}>
+                  <span className={cn('typo-label text-secondary')}>
                     Your photo
                   </span>
-                  <strong className={'text-accent'}>*</strong>
+                  <strong className={cn('text-accent')}>*</strong>
                   <Info size={16} />
                 </label>
-                <p className={'typo-description text-tertiary'}>
+                <p className={cn('typo-description text-tertiary')}>
                   This will be displayed on your profile.
                 </p>
               </div>
-              <img src={'#'} alt={'profile-image'} className={'rounded-md'} />
+              <img
+                src={'#'}
+                alt={'profile-image'}
+                className={cn('rounded-md')}
+              />
               <div>File upload</div>
             </fieldset>
             <Divider />
@@ -99,7 +110,7 @@ const SettingPage = () => {
             <CustomInput
               id={'time-zone'}
               label={
-                <label className={'flex gap-0.5 items-center'}>
+                <label className={cn('flex gap-0.5 items-center')}>
                   <span>Timezone</span>
                   <Info size={16} />
                 </label>
@@ -108,45 +119,45 @@ const SettingPage = () => {
             />
             <Divider />
 
-            <fieldset className={'space-y-5'}>
+            <fieldset className={cn('space-y-5')}>
               <div>
-                <label className={'flex items-center gap-0.5'}>
-                  <span className={'typo-label text-secondary'}>Bio</span>
-                  <strong className={'text-accent'}>*</strong>
+                <label className={cn('flex items-center gap-0.5')}>
+                  <span className={cn('typo-label text-secondary')}>Bio</span>
+                  <strong className={cn('text-accent')}>*</strong>
                 </label>
-                <p className={'typo-description text-tertiary'}>
+                <p className={cn('typo-description text-tertiary')}>
                   Write a short introduction.
                 </p>
               </div>
               <div>
-                <textarea className={'input-base h-40'} />
-                <p className={'typo-description text-tertiary'}>
+                <textarea className={cn('input-base h-40')} />
+                <p className={cn('typo-description text-tertiary')}>
                   964 characters left
                 </p>
               </div>
               <Divider />
             </fieldset>
 
-            <label className={'inline-block'}>
-              <span className={'typo-label text-secondary'}>
+            <label className={cn('inline-block')}>
+              <span className={cn('typo-label text-secondary')}>
                 Portfolio projects
               </span>
-              <p className={'typo-description text-tertiary'}>
+              <p className={cn('typo-description text-tertiary')}>
                 Share a few snippets of your work.
               </p>
             </label>
 
-            <div className={'space-y-4'}>
-              <div className={'w-full h-40 bg-zinc-600'}>FileUploader</div>
-              <ul className={'space-y-3'}>
-                <li className={'bg-red-300'}>File1</li>
-                <li className={'bg-red-400'}>File2</li>
-                <li className={'bg-red-600'}>File3</li>
+            <div className={cn('space-y-4')}>
+              <div className={cn('w-full h-40 bg-zinc-600')}>FileUploader</div>
+              <ul className={cn('space-y-3')}>
+                <li className={cn('bg-red-300')}>File1</li>
+                <li className={cn('bg-red-400')}>File2</li>
+                <li className={cn('bg-red-600')}>File3</li>
               </ul>
             </div>
             <Divider />
 
-            <div className="flex gap-3 justify-end">
+            <div className={cn('flex gap-3 justify-end')}>
               <CustomButton label="Cancel" />
               <CustomButton label="Save" type="submit" theme="brand" />
             </div>
