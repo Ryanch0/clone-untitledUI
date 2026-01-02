@@ -7,6 +7,7 @@ import { Info } from 'lucide-react'
 import TabList from '@/components/shared/TabList.tsx'
 import { cn } from '@/styles/utils.ts'
 import { TAB_OPTIONS } from '@/constant/constants.ts'
+import CustomSelect from '@/components/shared/CustomSelect.tsx'
 
 const SettingPage = () => {
   return (
@@ -22,11 +23,13 @@ const SettingPage = () => {
               <h2 className={cn('typo-page-title')}>Settings</h2>
               <SearchBar />
             </div>
-            <CustomInput
-              id="test"
-              placeholder="Details"
-              className={cn('md:hidden')}
-            />
+            <div className={'md:hidden'}>
+              <CustomSelect
+                options={TAB_OPTIONS}
+                defaultValue={TAB_OPTIONS[0].value}
+                placeholder={TAB_OPTIONS[0].label}
+              />
+            </div>
             <TabList
               options={TAB_OPTIONS}
               rootClassname={cn('hidden md:block')}
