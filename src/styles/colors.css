@@ -29,8 +29,8 @@
         background-color: var(--brand-primary);
     }
 
-    .bg-secondary {
-        background-color: var(--bg-secondary);
+    .bg-success {
+        background-color: var(--text-success);
     }
 
     .border-secondary {
@@ -41,13 +41,24 @@
         background-color: var(--border-secondary);
     }
 
+    .input-shadow {
+        box-shadow: 0px 1px 2px 0px rgba(10, 13, 18, 0.05);
+    }
     .button-shadow {
         box-shadow:
                 0px 1px 2px 0px #0A0D120D,
                 0px -2px 0px 0px #0A0D120D inset,
                 0px 0px 0px 1px #0A0D120D inset;
     }
+
+    .toolbar-shadow {
+        box-shadow: 0px 2px 2px -1px rgba(10,13,18,0.04),
+        0px 4px 6px -2px rgba(10,13,18,0.03),
+        0px 12px 16px -4px rgba(10,13,18,0.08);
+
+    }
 }
+
 
 @utility text-secondary {
     color: var(--text-secondary);
@@ -59,6 +70,10 @@
 
 @utility bg-primary {
     background-color: var(--bg-primary);
+}
+
+@utility bg-secondary {
+    background-color: var(--bg-secondary);
 }
 
 @utility outline-primary {

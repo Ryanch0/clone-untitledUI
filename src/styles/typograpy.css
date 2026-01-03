@@ -27,14 +27,6 @@
         font-weight: var(--font-semibold);
     }
 
-    .typo-tab {
-        font-family: var(--font-body);
-        font-size: var(--font-size-sm);
-        line-height: var(--line-height-sm);
-        font-weight: var(--font-semibold);
-    }
-
-
     .typo-description {
         font-family: var(--font-body);
         font-size: var(--font-size-sm);
@@ -49,10 +41,17 @@
         font-weight: var(--font-semibold);
     }
 
+    .typo-badge {
+        font-family: var(--font-body);
+        font-size: var(--font-size-xs);
+        line-height: var(--line-height-xs);
+        font-weight: var(--font-medium);
+    }
+
     .typo-file-meta {
         font-family: var(--font-body);
         font-size: var(--font-size-sm);
         line-height: var(--line-height-sm);
-        font-weight: var(--font-medium);
+        font-weight: var(--font-regular);
     }
 }
