@@ -14,13 +14,13 @@ const CustomButton = ({
   type = 'button'
 }: Props) => {
   const themes = {
-    primary: 'bg-primary border-primary',
-    brand: 'bg-brand text-white border-primary'
+    primary: 'bg-primary border-primary border',
+    brand: 'bg-brand text-white'
   }
 
   const getStyle = cn(
     themes[theme],
-    'cursor-pointer border typo-label py-[10px] px-[14px] rounded-md button-shadow'
+    'cursor-pointer typo-label py-[10px] px-[14px] rounded-md button-shadow'
   )
 
   return (

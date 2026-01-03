@@ -18,7 +18,7 @@ const TabList = ({
     console.log(value)
   }
   const tabsTriggerClassname = cn(
-    'py-2 px-3 typo-tab text-muted rounded-lg cursor-pointer',
+    'py-2 px-3 typo-label text-muted rounded-lg cursor-pointer',
     'data-[state=active]:bg-primary data-[state=active]:text-secondary data-[state=active]:outline-primary data-[state=active]:border-none',
     triggerClassname
   )

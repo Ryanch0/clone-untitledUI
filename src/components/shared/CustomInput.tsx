@@ -4,32 +4,43 @@ import { cn } from '@/styles/utils.ts'
 type Props = {
   id: string
   placeholder?: string
+  value?: string
   type?: string
   required?: boolean
   label?: ReactNode
   className?: string
   rightIcon?: ReactNode
   leftIcon?: ReactNode
+  hideLabelOnPc?: boolean
 }
 const CustomInput = ({
   id,
   placeholder,
+  value, // THIS VALUE IS ONLY FOR UI
   type = 'text',
   required,
   label,
   className = '',
   rightIcon,
-  leftIcon
+  leftIcon,
+  hideLabelOnPc
 }: Props) => {
   const hasRightIcon = !!rightIcon
   const hasLeftIcon = !!leftIcon
 
   return (
-    <div className={cn('flex flex-col gap-1.5 md:flex-row md:items-center')}>
+    <div
+      className={cn(
+        'flex flex-col gap-1.5 md:flex-row md:items-center input-shadow'
+      )}
+    >
       {label && (
         <label
           htmlFor={id}
-          className={cn('typo-label text-secondary md:w-1/3 md:max-w-xs')}
+          className={cn(
+            'typo-label text-secondary md:w-1/3 md:max-w-xs',
+            hideLabelOnPc && 'md:hidden'
+          )}
         >
           {label}
           {required && <span className={cn('text-accent pl-0.5')}>*</span>}
@@ -57,6 +68,7 @@ const CustomInput = ({
           placeholder={placeholder}
           type={type}
           aria-required={required}
+          value={value}
         />
         {rightIcon && (
           <span

@@ -6,7 +6,7 @@ const TobBarForMobile = () => {
   return (
     <header className={cn('md:hidden border-secondary border-b p-4')}>
       <div className={cn('flex')}>
-        <h2>LOGO</h2>
+        <h2 className={cn('typo-page-title')}>Untitled UI</h2>
         <div
           className={cn('ml-auto md:hidden text-2xl')}
           onClick={() => {
