@@ -14,7 +14,9 @@ const Profile = () => {
             <span className={cn('typo-label')}>Olivia Rhye</span>
             <ChevronsUpDown size={16} className={cn('text-tertiary ml-auto')} />
           </label>
-          <p className={cn('typo-description text-tertiary')}>description</p>
+          <p className={cn('typo-description text-tertiary')}>
+            ryan@ryanch0.dev
+          </p>
         </div>
       </div>
     </div>

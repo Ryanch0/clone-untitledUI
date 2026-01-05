@@ -31,13 +31,12 @@ const NavForDesktop = ({ className }: Props) => {
         className
       )}
     >
-      <section className={cn('space-y-4')}>
+      <section className={cn('space-y-4 h-full flex flex-col')}>
         <header className={cn('space-y-5')}>
           <h2 className={cn('typo-page-title')}>Untitled UI</h2>
           <SearchBar />
         </header>
-
-        <nav className={cn('flex flex-col gap-26 typo-nav')}>
+        <nav className={cn('flex flex-col h-full typo-nav')}>
           <ul>
             <li>
               <ToggleNavItem label={'Home'} icon={<House size={20} />} />
@@ -68,6 +67,7 @@ const NavForDesktop = ({ className }: Props) => {
               <ToggleNavItem label={'Users'} icon={<Users size={20} />} />
             </li>
           </ul>
+          <div className={'flex-1'}></div>
 
           <ul>
             <li>
@@ -134,7 +134,6 @@ const NavForDesktop = ({ className }: Props) => {
             </div>
           </div>
         </div>
-
         <Profile />
       </section>
     </aside>

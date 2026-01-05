@@ -107,7 +107,7 @@ const SettingsForm = () => {
         <div className={cn('space-y-2 w-full md:max-w-lg')}>
           <Toolbar />
           <textarea
-            className={cn('input-base h-40 input-shadow')}
+            className={cn('input-base h-40')}
             value={
               "I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy, and Webflow development."
             }

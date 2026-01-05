@@ -29,11 +29,7 @@ const CustomInput = ({
   const hasLeftIcon = !!leftIcon
 
   return (
-    <div
-      className={cn(
-        'flex flex-col gap-1.5 md:flex-row md:items-center input-shadow'
-      )}
-    >
+    <div className={cn('flex flex-col gap-1.5 md:flex-row md:items-center')}>
       {label && (
         <label
           htmlFor={id}

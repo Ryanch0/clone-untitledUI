@@ -41,9 +41,7 @@ const CustomSelect = ({
   placeholder = 'select...',
   label
 }: Props) => (
-  <div
-    className={'flex flex-col gap-1.5 md:flex-row md:items-center input-shadow'}
-  >
+  <div className={'flex flex-col gap-1.5 md:flex-row md:items-center'}>
     {label && (
       <label className={cn('typo-label text-secondary md:w-1/3 md:max-w-xs')}>
         {label}
@@ -54,7 +52,7 @@ const CustomSelect = ({
       defaultValue={defaultValue}
       onValueChange={onValueChange}
     >
-      <Trigger className={cn('w-full py-2.5 px-3.5 input-base md:max-w-lg')}>
+      <Trigger className={cn('w-full py-2.5 px-3.5 input-base  md:max-w-lg')}>
         <div className={cn('relative flex justify-between items-center')}>
           <Value placeholder={placeholder} />
           <Icon

@@ -37,7 +37,7 @@ const ToggleNavItem = ({
           {notifications && (
             <div
               className={cn(
-                'absolute top-1/2 right-10 -translate-y-1/2 size-6 rounded-full border border-secondary bg-secondary flex items-center justify-center'
+                'absolute top-1/2 right-7 -translate-y-1/2 size-6 rounded-full border border-secondary bg-secondary flex items-center justify-center'
               )}
             >
               <span className={cn('typo-badge text-secondary')}>
@@ -48,7 +48,7 @@ const ToggleNavItem = ({
           <ChevronDown
             size={16}
             className={cn(
-              'absolute top-1/2 right-3 -translate-y-1/2 text-muted transition-transform',
+              'absolute top-1/2 right-0 -translate-y-1/2 text-muted transition-transform',
               open && 'rotate-x-180'
             )}
           />
