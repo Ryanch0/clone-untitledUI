@@ -113,7 +113,7 @@ const NavForDesktop = ({ className }: Props) => {
 
         <div className={cn('h-52 bg-secondary p-4 space-y-3')}>
           <div className={cn('flex justify-between')}>
-            <ProgressCircle value={100} />
+            <ProgressCircle value={80} />
             <X size={20} className={cn('text-muted cursor-pointer')} />
           </div>
 
