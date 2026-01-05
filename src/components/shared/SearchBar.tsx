@@ -13,10 +13,11 @@ const SearchBar = () => {
         rightIcon={
           <span
             className={cn(
-              'flex items-center px-1 py-[1px] border-secondary border rounded-sm pointer-events-none'
+              'typo-badge text-placeholder flex items-center px-1 py-[1px] border-secondary border rounded-sm pointer-events-none'
             )}
           >
-            <Command size={12} />K
+            <Command size={11} />
+            <span>K</span>
           </span>
         }
       />

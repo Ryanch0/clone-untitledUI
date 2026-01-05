@@ -17,7 +17,9 @@ const BaseNavItem = ({ onClick, label, leftIcon, rightIcon }: Props) => {
     >
       {leftIcon && (
         <span
-          className={cn('absolute top-1/2 left-3 -translate-y-1/2 text-muted ')}
+          className={cn(
+            'absolute top-1/2 left-3 -translate-y-1/2 text-quaternary '
+          )}
         >
           {leftIcon}
         </span>
@@ -28,7 +30,7 @@ const BaseNavItem = ({ onClick, label, leftIcon, rightIcon }: Props) => {
       {rightIcon && (
         <span
           className={cn(
-            'absolute top-1/2 right-3 -translate-y-1/2 text-muted transition-transform'
+            'absolute top-1/2 right-3 -translate-y-1/2 text-quaternary transition-transform'
           )}
         >
           {rightIcon}

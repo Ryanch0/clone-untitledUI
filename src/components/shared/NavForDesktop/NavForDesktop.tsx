@@ -36,7 +36,7 @@ const NavForDesktop = ({ className }: Props) => {
           <h2 className={cn('typo-page-title')}>Untitled UI</h2>
           <SearchBar />
         </header>
-        <nav className={cn('flex flex-col h-full typo-nav')}>
+        <nav className={cn('flex flex-col h-full typo-nav ')}>
           <ul>
             <li>
               <ToggleNavItem label={'Home'} icon={<House size={20} />} />
@@ -93,7 +93,7 @@ const NavForDesktop = ({ className }: Props) => {
                         IS_ONLINE_STATUS && 'bg-success '
                       )}
                     ></div>
-                    <span className={cn('typo-badge')}>
+                    <span className={cn('typo-badge text-muted')}>
                       {IS_ONLINE_STATUS ? 'Online' : 'Offline'}
                     </span>
                   </label>
@@ -114,7 +114,7 @@ const NavForDesktop = ({ className }: Props) => {
         <div className={cn('h-52 bg-secondary p-4 space-y-3')}>
           <div className={cn('flex justify-between')}>
             <ProgressCircle value={80} />
-            <X size={20} className={cn('text-muted cursor-pointer')} />
+            <X size={20} className={cn('text-quaternary cursor-pointer')} />
           </div>
 
           <div className={'space-y-4'}>

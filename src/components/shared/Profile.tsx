@@ -12,7 +12,10 @@ const Profile = () => {
         <div className={cn('flex flex-col flex-1')}>
           <label className={cn('flex items-center')}>
             <span className={cn('typo-label')}>Olivia Rhye</span>
-            <ChevronsUpDown size={16} className={cn('text-tertiary ml-auto')} />
+            <ChevronsUpDown
+              size={16}
+              className={cn('text-quaternary ml-auto')}
+            />
           </label>
           <p className={cn('typo-description text-tertiary')}>
             ryan@ryanch0.dev

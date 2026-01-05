@@ -35,7 +35,7 @@ export const TIMEZONE_OPTIONS = [
   {
     label: (
       <div className={'flex gap-2 items-center'}>
-        <Clock size={20} className={'text-muted'} />
+        <Clock size={20} className={'text-quaternary'} />
         <p className={'text-tertiary'}>
           <span className={'text-primary font-medium'}>PST</span> UTC-08:00
         </p>

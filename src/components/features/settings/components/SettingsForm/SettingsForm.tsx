@@ -1,7 +1,7 @@
 import { cn } from '@/styles/utils.ts'
 import CustomButton from '@/components/shared/CustomButton.tsx'
 import CustomInput from '@/components/shared/CustomInput.tsx'
-import { Info, Mail } from 'lucide-react'
+import { CircleQuestionMark, Mail } from 'lucide-react'
 import PersonalInfoSection from '@/components/features/settings/components/SettingsForm/PersonalInfoSection.tsx'
 import Avatar from '@/components/shared/Avatar.tsx'
 import {
@@ -66,11 +66,14 @@ const SettingsForm = () => {
         classname={cn('flex-wrap gap-5 md:gap-1.5 md:space-y-5')}
         labelSection={
           <Label
-            id={'files'}
-            required
+            id={'photo'}
             description={'This will be displayed on your profile.'}
           >
-            Your photo
+            <p className={cn('flex items-center gap-0.5')}>
+              Your photo
+              <span className={cn('text-accent')}>*</span>
+              <CircleQuestionMark size={16} className={cn('text-quaternary')} />
+            </p>
           </Label>
         }
         formItem={
@@ -103,7 +106,7 @@ const SettingsForm = () => {
           <Label id={'time-zone'}>
             <label className={cn('flex gap-0.5 items-center')}>
               <span>Timezone</span>
-              <Info size={16} />
+              <CircleQuestionMark size={16} className={cn('text-quaternary')} />
             </label>
           </Label>
         }

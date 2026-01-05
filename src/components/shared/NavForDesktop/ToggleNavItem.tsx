@@ -48,7 +48,7 @@ const ToggleNavItem = ({
           <ChevronDown
             size={16}
             className={cn(
-              'absolute top-1/2 right-0 -translate-y-1/2 text-muted transition-transform',
+              'absolute top-1/2 right-0 -translate-y-1/2 text-quaternary transition-transform',
               open && 'rotate-x-180'
             )}
           />

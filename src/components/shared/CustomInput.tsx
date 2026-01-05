@@ -29,7 +29,7 @@ const CustomInput = ({
       {leftIcon && (
         <span
           className={cn(
-            'absolute left-3.5 top-1/2 -translate-y-1/2 text-muted'
+            'absolute left-3.5 top-1/2 -translate-y-1/2 text-quaternary'
           )}
         >
           {leftIcon}
@@ -52,7 +52,7 @@ const CustomInput = ({
       {rightIcon && (
         <span
           className={cn(
-            'absolute right-3.5 top-1/2 -translate-y-1/2 text-muted'
+            'absolute right-3.5 top-1/2 -translate-y-1/2 text-quaternary'
           )}
         >
           {rightIcon}

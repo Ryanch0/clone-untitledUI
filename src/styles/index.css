@@ -31,6 +31,7 @@
     --text-tertiary: #535862; /* description text */
     --text-muted: #717680; /* tab default */
     --text-placeholder: #717680; /* input placeholder (same as muted in light) */
+    --text-quaternary:#A4A7AE;
 
     /* Brand / Accent / Status*/
     --text-accent: #6941c6; /* upgrade-plan / purple text */
@@ -55,6 +56,7 @@
     --text-tertiary: #94979c;
     --text-muted: #94979c;
     --text-placeholder: #85888e;
+    --text-quaternary:#61656C;
 
     --text-accent: #cecfd2;
     --brand-primary: #7f56d9;

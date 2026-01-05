@@ -44,7 +44,9 @@ const CustomSelect = ({
       <div className={cn('relative flex justify-between items-center')}>
         <Value placeholder={placeholder} />
         <Icon
-          className={cn('absolute right-0 top-1/2 -translate-y-1/2 text-muted')}
+          className={cn(
+            'absolute right-0 top-1/2 -translate-y-1/2 text-quaternary'
+          )}
         >
           <ChevronDownIcon size={20} />
         </Icon>

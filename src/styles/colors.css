@@ -24,6 +24,10 @@
         color: var(--text-success);
     }
 
+    .text-quaternary {
+        color: var(--text-quaternary);
+    }
+
     /* Brand background (primary button) */
     .bg-brand {
         background-color: var(--brand-primary);
