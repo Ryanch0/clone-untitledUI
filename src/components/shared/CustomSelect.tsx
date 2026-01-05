@@ -30,7 +30,6 @@ type Props = {
   value?: string
   defaultValue?: string
   onValueChange?: (value: string) => void
-  label?: ReactNode
 }
 
 const CustomSelect = ({
@@ -38,56 +37,42 @@ const CustomSelect = ({
   value,
   onValueChange,
   defaultValue = '',
-  placeholder = 'select...',
-  label
+  placeholder = 'select...'
 }: Props) => (
-  <div className={'flex flex-col gap-1.5 md:flex-row md:items-center'}>
-    {label && (
-      <label className={cn('typo-label text-secondary md:w-1/3 md:max-w-xs')}>
-        {label}
-      </label>
-    )}
-    <Root
-      value={value}
-      defaultValue={defaultValue}
-      onValueChange={onValueChange}
-    >
-      <Trigger className={cn('w-full py-2.5 px-3.5 input-base  md:max-w-lg')}>
-        <div className={cn('relative flex justify-between items-center')}>
-          <Value placeholder={placeholder} />
-          <Icon
-            className={cn(
-              'absolute right-0 top-1/2 -translate-y-1/2 text-muted'
-            )}
-          >
-            <ChevronDownIcon size={20} />
-          </Icon>
-        </div>
-      </Trigger>
-      <Portal>
-        <Content
-          position="popper"
-          className={cn(
-            'w-[var(--radix-select-trigger-width)] bg-secondary rounded-md shadow-lg z-50'
-          )}
+  <Root value={value} defaultValue={defaultValue} onValueChange={onValueChange}>
+    <Trigger className={cn('w-full py-2.5 px-3.5 input-base  md:max-w-lg')}>
+      <div className={cn('relative flex justify-between items-center')}>
+        <Value placeholder={placeholder} />
+        <Icon
+          className={cn('absolute right-0 top-1/2 -translate-y-1/2 text-muted')}
         >
-          <ScrollUpButton>
-            <ChevronUpIcon />
-          </ScrollUpButton>
-          <Viewport>
-            <Group className={cn('bg-secondary space-y-1.5 py-2')}>
-              {options.map(({ label, value }) => (
-                <SelectItem value={value} label={label} key={value} />
-              ))}
-            </Group>
-          </Viewport>
-          <ScrollDownButton>
-            <ChevronDownIcon />
-          </ScrollDownButton>
-        </Content>
-      </Portal>
-    </Root>
-  </div>
+          <ChevronDownIcon size={20} />
+        </Icon>
+      </div>
+    </Trigger>
+    <Portal>
+      <Content
+        position="popper"
+        className={cn(
+          'w-[var(--radix-select-trigger-width)] bg-secondary rounded-md shadow-lg z-50'
+        )}
+      >
+        <ScrollUpButton>
+          <ChevronUpIcon />
+        </ScrollUpButton>
+        <Viewport>
+          <Group className={cn('bg-secondary space-y-1.5 py-2')}>
+            {options.map(({ label, value }) => (
+              <SelectItem value={value} label={label} key={value} />
+            ))}
+          </Group>
+        </Viewport>
+        <ScrollDownButton>
+          <ChevronDownIcon />
+        </ScrollDownButton>
+      </Content>
+    </Portal>
+  </Root>
 )
 
 const SelectItem = React.forwardRef(

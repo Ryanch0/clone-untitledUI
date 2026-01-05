@@ -1,6 +1,5 @@
 import { cn } from '@/styles/utils.ts'
 import CustomButton from '@/components/shared/CustomButton.tsx'
-import CustomInput from '@/components/shared/CustomInput.tsx'
 import Divider from '@/components/shared/Divider.tsx'
 
 const PersonalInfoSection = () => {
@@ -23,35 +22,6 @@ const PersonalInfoSection = () => {
         </div>
       </div>
       <Divider />
-      <div className={cn('w-full')}>
-        <div className={'flex flex-col md:flex-row md:items-center gap-1.5'}>
-          <label
-            className={cn(
-              'typo-label text-secondary md:w-1/3 md:max-w-xs hidden md:block'
-            )}
-          >
-            Name
-            <span className={cn('text-accent pl-0.5')}>*</span>
-          </label>
-
-          <div className={'flex flex-col md:flex-row gap-5'}>
-            <CustomInput
-              id={'first-name'}
-              label={'First name'}
-              value={'Ryan'}
-              hideLabelOnPc
-              required
-            />
-            <CustomInput
-              id={'last-name'}
-              label={'Last name'}
-              value={'Cho'}
-              hideLabelOnPc
-              required
-            />
-          </div>
-        </div>
-      </div>
     </>
   )
 }

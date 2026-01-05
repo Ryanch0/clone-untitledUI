@@ -18,16 +18,16 @@ export const COUNTRY_OPTIONS = [
     label: (
       <div className={'flex gap-2'}>
         <img
-          src="https://hatscripts.github.io/circle-flags/flags/au.svg"
-          alt="australia"
+          src="https://hatscripts.github.io/circle-flags/flags/kr.svg"
+          alt="korea"
           width="20"
           height="20"
           className="rounded-full"
         />
-        <span>Australia</span>
+        <span>South Korea</span>
       </div>
     ),
-    value: 'australia'
+    value: 'korea'
   }
 ]
 
