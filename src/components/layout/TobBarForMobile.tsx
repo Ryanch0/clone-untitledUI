@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { cn } from '@/styles/utils.ts'
 import NavMenuList from '../shared/NavForDesktop/NavMenuList'
 import { Menu } from 'lucide-react'
+import Logo from '@/components/shared/Logo.tsx'
 
 const TobBarForMobile = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -9,7 +10,7 @@ const TobBarForMobile = () => {
     <>
       <header className={cn('md:hidden border-secondary border-b p-4')}>
         <div className={cn('flex')}>
-          <h2 className={cn('typo-page-title')}>Untitled UI</h2>
+          <Logo />
           <button
             className={cn('ml-auto md:hidden text-secondary cursor-pointer')}
             onClick={() => {

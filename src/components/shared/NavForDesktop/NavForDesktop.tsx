@@ -4,6 +4,7 @@ import { X } from 'lucide-react'
 import ProgressCircle from '@/components/shared/ProgressCircle.tsx'
 import Profile from '@/components/shared/Profile.tsx'
 import NavMenuList from '@/components/shared/NavForDesktop/NavMenuList.tsx'
+import Logo from '@/components/shared/Logo.tsx'
 
 type Props = {
   className?: string
@@ -18,7 +19,7 @@ const NavForDesktop = ({ className }: Props) => {
     >
       <section className={cn('space-y-4 h-full flex flex-col')}>
         <header className={cn('space-y-5')}>
-          <h2 className={cn('typo-page-title')}>Untitled UI</h2>
+          <Logo />
           <SearchBar />
         </header>
         <NavMenuList />
