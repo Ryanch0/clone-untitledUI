@@ -158,7 +158,7 @@ const SettingsForm = () => {
         formItem={
           <div className={cn('w-full space-y-4')}>
             <FileUploader />
-            <ul>
+            <ul className={cn('space-y-3')}>
               <FileUploadItem
                 name={'Tech design requirements.pdf'}
                 sizeDescription={'200 KB of 200 KB'}
