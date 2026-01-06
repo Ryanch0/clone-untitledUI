@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { cn } from '@/styles/utils.ts'
-import NavMenuList from '../shared/NavForDesktop/NavMenuList'
+import NavMenuList from '../NavMenuList.tsx'
 import { Menu } from 'lucide-react'
 import Logo from '@/components/shared/Logo.tsx'
 
-const TobBarForMobile = () => {
+const NavForMobile = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
   return (
     <>
@@ -25,4 +25,4 @@ const TobBarForMobile = () => {
     </>
   )
 }
-export default TobBarForMobile
+export default NavForMobile

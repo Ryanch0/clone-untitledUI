@@ -1,5 +1,5 @@
 import { cn } from '@/styles/utils.ts'
-import ToggleNavItem from '@/components/shared/NavForDesktop/ToggleNavItem.tsx'
+import ToggleNavItem from '@/components/shared/Nav/ToggleNavItem.tsx'
 import {
   ChartBar,
   ChartPie,
@@ -12,7 +12,7 @@ import {
   SquareCheckBig,
   Users
 } from 'lucide-react'
-import RedirectNavItem from '@/components/shared/NavForDesktop/RedirectNavItem.tsx'
+import RedirectNavItem from '@/components/shared/Nav/RedirectNavItem.tsx'
 
 const NavMenuList = ({ classname }: { classname?: string }) => {
   const IS_ONLINE_STATUS = true

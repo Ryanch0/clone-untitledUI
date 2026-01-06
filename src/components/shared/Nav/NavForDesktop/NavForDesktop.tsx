@@ -1,9 +1,9 @@
-import SearchBar from '../SearchBar.tsx'
+import SearchBar from '../../SearchBar.tsx'
 import { cn } from '@/styles/utils.ts'
 import { X } from 'lucide-react'
 import ProgressCircle from '@/components/shared/ProgressCircle.tsx'
 import Profile from '@/components/shared/Profile.tsx'
-import NavMenuList from '@/components/shared/NavForDesktop/NavMenuList.tsx'
+import NavMenuList from '@/components/shared/Nav/NavMenuList.tsx'
 import Logo from '@/components/shared/Logo.tsx'
 
 type Props = {

@@ -1,7 +1,7 @@
 import { type ReactNode, useCallback, useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 import { cn } from '@/styles/utils.ts'
-import BaseNavItem from '@/components/shared/NavForDesktop/BaseNavItem.tsx'
+import BaseNavItem from '@/components/shared/Nav/BaseNavItem.tsx'
 
 type Props = {
   defaultOpen?: boolean

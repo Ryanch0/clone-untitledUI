@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import BaseNavItem from '@/components/shared/NavForDesktop/BaseNavItem.tsx'
+import BaseNavItem from '@/components/shared/Nav/BaseNavItem.tsx'
 
 type Props = {
   to?: string
