@@ -12,7 +12,7 @@ const SettingsHeader = () => {
           'flex flex-col md:flex-row md:justify-between md:items-center gap-5'
         )}
       >
-        <h2 className={cn('typo-page-title')}>Settings</h2>
+        <h2 className={cn('typo-page-title')}>Settings TEST</h2>
         <SearchBar />
       </div>
       <div className={'md:hidden'}>
